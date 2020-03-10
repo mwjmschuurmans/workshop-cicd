@@ -35,16 +35,6 @@ pipeline {
                 echo 'Test'
             }
         }
-        stage('e2e Test') {
-            steps {             
-                echo 'e2e Test'
-            }
-            post {
-                always {
-                    echo 'Cleanup'
-                }
-            }
-        }
         stage('Deploy') {
             steps {                
                 echo 'Deploy'
